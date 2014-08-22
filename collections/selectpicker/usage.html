@@ -1,0 +1,8 @@
+<script>
+this.availableOptions = ko.observableArray([
+	{ value: '1', name: 'Item 1'}, 
+	{ value: '2', name: 'Item 2'}
+]); 
+</script>
+
+<select data-bind="selectPicker: selectPickerName, options:availableOptions, optionsText: 'name', optionsValue: 'value'"></select >
