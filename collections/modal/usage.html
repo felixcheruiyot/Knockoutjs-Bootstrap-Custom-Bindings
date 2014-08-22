@@ -1,0 +1,23 @@
+<script>
+  this.myModal = ko.observable(false);
+  //Close modal
+  this.myModal(false);
+  //Open modal
+  this.myModal(true);
+</script>
+<!-- YOUR MODAL -->
+<div class="modal fade" tabindex="-1" role="dialog" data-bind="modal:myModal"  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Title</h4>
+          </div>
+          <div class="modal-body"> <!-- BODY --></div>
+          <div class="modal-footer">
+              <button type="button" data-bind="click : actionFunction" class="btn btn-success">Save</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- END MODAL -->
